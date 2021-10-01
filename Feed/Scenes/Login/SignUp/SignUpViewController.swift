@@ -7,11 +7,12 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseFirestore
 
 class SignUpViewController: UIViewController {
 
-    
     // MARK: Properties
+    let db = Firestore.firestore()
     
     // MARK: Outlets
     @IBOutlet weak var textFieldName: CustomTextField!
@@ -61,6 +62,19 @@ class SignUpViewController: UIViewController {
                 print("ERRO -> \(error?.localizedDescription)")
             } else {
                 print("Usuário cadastrado!")
+                
+                guard let userId = authResult?.user.uid else {return}
+                
+                self.db.collection("users").document(userId).setData([
+                    "name": name,
+                    "email": email
+                ]) { err in
+                    if let err = err {
+                        print("Error adding document: \(err)")
+                    } else {
+                        print("Document added")
+                    }
+                }
             }
             
         }
