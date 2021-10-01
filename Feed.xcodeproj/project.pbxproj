@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		880651C027067100002F78BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 880651BE27067100002F78BE /* LaunchScreen.storyboard */; };
 		880651CD270671F1002F78BE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880651CB270671F1002F78BE /* HomeViewController.swift */; };
 		880651CE270671F1002F78BE /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880651CC270671F1002F78BE /* HomeViewController.xib */; };
+		882D3379270687DA00896495 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 882D3378270687DA00896495 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		880651C127067100002F78BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		880651CB270671F1002F78BE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		880651CC270671F1002F78BE /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		882D3378270687DA00896495 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E55F9E05A9C050E7831411ED /* Pods-Feed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feed.debug.xcconfig"; path = "Target Support Files/Pods-Feed/Pods-Feed.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,6 +53,7 @@
 		880651A7270670FF002F78BE = {
 			isa = PBXGroup;
 			children = (
+				882D3378270687DA00896495 /* GoogleService-Info.plist */,
 				880651B2270670FF002F78BE /* Feed */,
 				880651B1270670FF002F78BE /* Products */,
 				A7AB102BB4D5605B2834D729 /* Pods */,
@@ -117,7 +120,6 @@
 				E55F9E05A9C050E7831411ED /* Pods-Feed.debug.xcconfig */,
 				717D8B5F290E2722E5ADAD26 /* Pods-Feed.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -181,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				880651C027067100002F78BE /* LaunchScreen.storyboard in Resources */,
+				882D3379270687DA00896495 /* GoogleService-Info.plist in Resources */,
 				880651BD27067100002F78BE /* Assets.xcassets in Resources */,
 				880651CE270671F1002F78BE /* HomeViewController.xib in Resources */,
 			);
