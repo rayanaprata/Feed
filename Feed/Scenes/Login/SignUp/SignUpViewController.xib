@@ -11,6 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="Feed" customModuleProvider="target">
             <connections>
+                <outlet property="textFieldConfirmPassword" destination="IaB-4d-cO2" id="DyZ-c4-0rE"/>
+                <outlet property="textFieldEmail" destination="kA9-EA-Jax" id="aBS-vc-b63"/>
+                <outlet property="textFieldName" destination="JHl-Su-ouk" id="i80-mb-Hgk"/>
+                <outlet property="textFieldPassword" destination="Smg-yO-LRZ" id="Cde-4v-fX4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -84,7 +88,10 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" title="Button"/>
+                    <state key="normal" title="Cadastrar"/>
+                    <connections>
+                        <action selector="handlerButtonRegister:" destination="-1" eventType="touchUpInside" id="CiP-EY-c7l"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
