@@ -38,11 +38,30 @@ class SignUpViewController: UIViewController {
     // MARK: Actions
     @IBAction func handlerButtonRegister(_ sender: Any) {
         
-        guard let email = textFieldEmail.text, let password = textFieldPassword.text else { return }
+        guard let email = textFieldEmail.text, let password = textFieldPassword.text, let name = textFieldName.text, let confirmPassword = textFieldConfirmPassword.text else { return }
+        
+        if name.count < 2 {
+            print("digite um nome válido")
+            return
+        }
+        
+        if !email.contains("@") {
+            print("email incorreto")
+            return
+        }
+        
+        if password != confirmPassword {
+            print("a senha n é igual")
+            return
+        }
+        
         
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-            
-            
+            if error != nil {
+                print("ERRO -> \(error?.localizedDescription)")
+            } else {
+                print("Usuário cadastrado!")
+            }
             
         }
     }
