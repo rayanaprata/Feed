@@ -40,12 +40,13 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func handlerButtonEntry(_ sender: Any) {
-        Auth.auth().signIn
+//        Auth.auth().signIn
     }
     
     // MARK: Methods
     private func setupUI() {
         title = "Login"
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
         navigationController?.navigationBar.barTintColor = UIColor(red: 0.96, green: 0.80, blue: 0.27, alpha: 1.00)
         navigationController?.navigationBar.tintColor = .black
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
