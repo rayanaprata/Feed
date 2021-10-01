@@ -34,7 +34,6 @@ class SignUpViewController: UIViewController {
     
     // MARK: Methods
     private func setupUI() {
-        
+        title="Cadastrar"
     }
-
 }

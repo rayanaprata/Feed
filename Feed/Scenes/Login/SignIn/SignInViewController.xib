@@ -12,6 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInViewController" customModule="Feed" customModuleProvider="target">
             <connections>
+                <outlet property="textFieldEmail" destination="7eX-Lh-TU0" id="xVl-J9-KWF"/>
+                <outlet property="textFieldPassword" destination="0SR-RI-eZ3" id="yrs-fk-eLr"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -73,6 +75,9 @@
                             <real key="value" value="2"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="handlerButtonCreateAccount:" destination="-1" eventType="touchUpInside" id="Uhe-kb-yyA"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPa-uu-VR0">
                     <rect key="frame" x="20" y="782" width="374" height="50"/>
@@ -84,6 +89,9 @@
                     <state key="normal" title="Entrar">
                         <color key="titleColor" red="0.054901960780000002" green="0.054901960780000002" blue="0.054901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
+                    <connections>
+                        <action selector="handlerButtonEntry:" destination="-1" eventType="touchUpInside" id="vvZ-fB-slj"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

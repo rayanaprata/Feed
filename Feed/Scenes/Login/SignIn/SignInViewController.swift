@@ -13,6 +13,8 @@ class SignInViewController: UIViewController {
     // MARK: Properties
     
     // MARK: Outlets
+    @IBOutlet weak var textFieldEmail: CustomTextField!
+    @IBOutlet weak var textFieldPassword: CustomTextField!
     
     // MARK: Initialization
     init() {
@@ -31,6 +33,14 @@ class SignInViewController: UIViewController {
     }
     
     // MARK: Actions
+    @IBAction func handlerButtonCreateAccount(_ sender: Any) {
+        let viewController = SignUpViewController()
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func handlerButtonEntry(_ sender: Any) {
+        
+    }
     
     // MARK: Methods
     private func setupUI() {

@@ -112,7 +112,7 @@
 		880651C927067168002F78BE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				F6D04EC22706A31F008FCE88 /* Utils */,
+				F6D04EC22706A31F008FCE88 /* CustomStyles  */,
 				882D337A2706890300896495 /* Login */,
 				880651CA270671DA002F78BE /* Home */,
 			);
@@ -164,13 +164,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		F6D04EC22706A31F008FCE88 /* Utils */ = {
+		F6D04EC22706A31F008FCE88 /* CustomStyles  */ = {
 			isa = PBXGroup;
 			children = (
 				F6D04EC32706A359008FCE88 /* CustomTextField.swift */,
 				F6D04EC62706A9E3008FCE88 /* CustomBorderButton.swift */,
 			);
-			path = Utils;
+			path = "CustomStyles ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
