@@ -18,6 +18,8 @@
 		882D338027068A8100896495 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882D337E27068A8100896495 /* SignInViewController.xib */; };
 		882D338427068A9700896495 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882D338227068A9700896495 /* SignUpViewController.swift */; };
 		882D338527068A9700896495 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882D338327068A9700896495 /* SignUpViewController.xib */; };
+		F6D04EC42706A359008FCE88 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D04EC32706A359008FCE88 /* CustomTextField.swift */; };
+		F6D04EC72706A9E3008FCE88 /* CustomBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D04EC62706A9E3008FCE88 /* CustomBorderButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		882D338227068A9700896495 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		882D338327068A9700896495 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		E55F9E05A9C050E7831411ED /* Pods-Feed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feed.debug.xcconfig"; path = "Target Support Files/Pods-Feed/Pods-Feed.debug.xcconfig"; sourceTree = "<group>"; };
+		F6D04EC32706A359008FCE88 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		F6D04EC62706A9E3008FCE88 /* CustomBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBorderButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 		880651C927067168002F78BE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				F6D04EC22706A31F008FCE88 /* Utils */,
 				882D337A2706890300896495 /* Login */,
 				880651CA270671DA002F78BE /* Home */,
 			);
@@ -157,6 +162,15 @@
 				717D8B5F290E2722E5ADAD26 /* Pods-Feed.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F6D04EC22706A31F008FCE88 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F6D04EC32706A359008FCE88 /* CustomTextField.swift */,
+				F6D04EC62706A9E3008FCE88 /* CustomBorderButton.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +294,8 @@
 				880651CD270671F1002F78BE /* HomeViewController.swift in Sources */,
 				882D338427068A9700896495 /* SignUpViewController.swift in Sources */,
 				882D337F27068A8100896495 /* SignInViewController.swift in Sources */,
+				F6D04EC72706A9E3008FCE88 /* CustomBorderButton.swift in Sources */,
+				F6D04EC42706A359008FCE88 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
