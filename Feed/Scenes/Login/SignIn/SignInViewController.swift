@@ -45,11 +45,18 @@ class SignInViewController: UIViewController {
     
     // MARK: Methods
     private func setupUI() {
-        title="Login"
-        
+        title = "Login"
         navigationController?.navigationBar.barTintColor = UIColor(red: 0.96, green: 0.80, blue: 0.27, alpha: 1.00)
         navigationController?.navigationBar.tintColor = .black
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleClick))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func handleClick() {
+        textFieldEmail.resignFirstResponder()
+        textFieldPassword.resignFirstResponder()
     }
 
 }

@@ -49,6 +49,15 @@ class SignUpViewController: UIViewController {
     
     // MARK: Methods
     private func setupUI() {
-        title="Cadastrar"
+        title = "Cadastrar"
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleClick))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func handleClick() {
+        textFieldName.resignFirstResponder()
+        textFieldEmail.resignFirstResponder()
+        textFieldPassword.resignFirstResponder()
+        textFieldConfirmPassword.resignFirstResponder()
     }
 }
