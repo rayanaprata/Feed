@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignInViewController: UIViewController {
 
@@ -39,7 +40,7 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func handlerButtonEntry(_ sender: Any) {
-        
+        Auth.auth().signIn
     }
     
     // MARK: Methods

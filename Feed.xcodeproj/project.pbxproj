@@ -65,7 +65,6 @@
 		880651A7270670FF002F78BE = {
 			isa = PBXGroup;
 			children = (
-				882D3378270687DA00896495 /* GoogleService-Info.plist */,
 				880651B2270670FF002F78BE /* Feed */,
 				880651B1270670FF002F78BE /* Products */,
 				A7AB102BB4D5605B2834D729 /* Pods */,
@@ -102,6 +101,7 @@
 		880651C827067160002F78BE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				882D3378270687DA00896495 /* GoogleService-Info.plist */,
 				880651BC27067100002F78BE /* Assets.xcassets */,
 				880651BE27067100002F78BE /* LaunchScreen.storyboard */,
 				880651C127067100002F78BE /* Info.plist */,

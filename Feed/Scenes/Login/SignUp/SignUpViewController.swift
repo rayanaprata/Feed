@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignUpViewController: UIViewController {
 
@@ -37,6 +38,13 @@ class SignUpViewController: UIViewController {
     // MARK: Actions
     @IBAction func handlerButtonRegister(_ sender: Any) {
         
+        guard let email = textFieldEmail.text, let password = textFieldPassword.text else { return }
+        
+        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+            
+            
+            
+        }
     }
     
     // MARK: Methods
