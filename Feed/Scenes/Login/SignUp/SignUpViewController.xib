@@ -18,8 +18,47 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g4z-YK-W0g">
+                    <rect key="frame" x="20" y="344" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LXK-Xk-VPZ">
+                    <rect key="frame" x="20" y="428" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e73-Gy-XUf">
+                    <rect key="frame" x="20" y="747" width="374" height="50"/>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.79607843140000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="M9I-2c-hdR"/>
+                    </constraints>
+                    <state key="normal" title="Cadastrar">
+                        <color key="titleColor" red="0.054901960780000002" green="0.054901960780000002" blue="0.054901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmar Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qaw-4u-IU9">
+                    <rect key="frame" x="20" y="504" width="374" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="e73-Gy-XUf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="33U-zm-yKS"/>
+                <constraint firstItem="g4z-YK-W0g" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="300" id="N8X-Vf-3kg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="e73-Gy-XUf" secondAttribute="bottom" constant="65" id="fe4-zq-uW1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="e73-Gy-XUf" secondAttribute="trailing" constant="20" id="hb8-VV-OXz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="g4z-YK-W0g" secondAttribute="trailing" constant="20" id="iCb-Xl-yPe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LXK-Xk-VPZ" secondAttribute="trailing" constant="20" id="iog-1O-3Kv"/>
+                <constraint firstItem="LXK-Xk-VPZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="qVk-6U-aSQ"/>
+                <constraint firstItem="g4z-YK-W0g" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="rsV-cY-vIQ"/>
+                <constraint firstItem="LXK-Xk-VPZ" firstAttribute="top" secondItem="g4z-YK-W0g" secondAttribute="bottom" constant="50" id="vCI-Oy-4Lj"/>
+            </constraints>
             <point key="canvasLocation" x="133" y="120"/>
         </view>
     </objects>

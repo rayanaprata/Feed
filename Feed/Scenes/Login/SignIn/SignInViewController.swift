@@ -41,5 +41,4 @@ class SignInViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
     }
 
-
 }
