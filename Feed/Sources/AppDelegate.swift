@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         
-        let viewController = HomeViewController()
+        let viewController = SignInViewController()
         let navigationController = UINavigationController(rootViewController: viewController)
         
         window = UIWindow(frame: UIScreen.main.bounds)

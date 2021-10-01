@@ -14,6 +14,10 @@
 		880651CD270671F1002F78BE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880651CB270671F1002F78BE /* HomeViewController.swift */; };
 		880651CE270671F1002F78BE /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880651CC270671F1002F78BE /* HomeViewController.xib */; };
 		882D3379270687DA00896495 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 882D3378270687DA00896495 /* GoogleService-Info.plist */; };
+		882D337F27068A8100896495 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882D337D27068A8100896495 /* SignInViewController.swift */; };
+		882D338027068A8100896495 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882D337E27068A8100896495 /* SignInViewController.xib */; };
+		882D338427068A9700896495 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882D338227068A9700896495 /* SignUpViewController.swift */; };
+		882D338527068A9700896495 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882D338327068A9700896495 /* SignUpViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		880651CB270671F1002F78BE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		880651CC270671F1002F78BE /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		882D3378270687DA00896495 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		882D337D27068A8100896495 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		882D337E27068A8100896495 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		882D338227068A9700896495 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		882D338327068A9700896495 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		E55F9E05A9C050E7831411ED /* Pods-Feed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feed.debug.xcconfig"; path = "Target Support Files/Pods-Feed/Pods-Feed.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +108,7 @@
 		880651C927067168002F78BE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				882D337A2706890300896495 /* Login */,
 				880651CA270671DA002F78BE /* Home */,
 			);
 			path = Scenes;
@@ -112,6 +121,33 @@
 				880651CC270671F1002F78BE /* HomeViewController.xib */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		882D337A2706890300896495 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				882D338127068A8800896495 /* SignUp */,
+				882D337B2706891600896495 /* SignIn */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		882D337B2706891600896495 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				882D337D27068A8100896495 /* SignInViewController.swift */,
+				882D337E27068A8100896495 /* SignInViewController.xib */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		882D338127068A8800896495 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				882D338227068A9700896495 /* SignUpViewController.swift */,
+				882D338327068A9700896495 /* SignUpViewController.xib */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		A7AB102BB4D5605B2834D729 /* Pods */ = {
@@ -182,9 +218,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882D338027068A8100896495 /* SignInViewController.xib in Resources */,
 				880651C027067100002F78BE /* LaunchScreen.storyboard in Resources */,
 				882D3379270687DA00896495 /* GoogleService-Info.plist in Resources */,
 				880651BD27067100002F78BE /* Assets.xcassets in Resources */,
+				882D338527068A9700896495 /* SignUpViewController.xib in Resources */,
 				880651CE270671F1002F78BE /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +278,8 @@
 			files = (
 				880651B4270670FF002F78BE /* AppDelegate.swift in Sources */,
 				880651CD270671F1002F78BE /* HomeViewController.swift in Sources */,
+				882D338427068A9700896495 /* SignUpViewController.swift in Sources */,
+				882D337F27068A8100896495 /* SignInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
