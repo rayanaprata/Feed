@@ -43,9 +43,16 @@ class SignUpViewController: UIViewController {
         else { return }
         
         if validateFields(name: name, email: email, password: password, confirmPassword: confirmPassword) {
-            FirebaseAuthManager.createAccount(name: name, email: email, password: password)
+            FirebaseAuthManager.createAccount(name: name, email: email, password: password) { error in
+                if error != nil {
+                    print("Error: \(error?.localizedDescription)")
+                }
+                else {
+                    // TODO: Navegar para o Feed
+                    print("navegar pro feed")
+                }
+            }
         }
-                
     }
     
     // MARK: Methods
