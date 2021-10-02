@@ -18,13 +18,12 @@
 		880651B4270670FF002F78BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880651B3270670FF002F78BE /* AppDelegate.swift */; };
 		880651BD27067100002F78BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 880651BC27067100002F78BE /* Assets.xcassets */; };
 		880651C027067100002F78BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 880651BE27067100002F78BE /* LaunchScreen.storyboard */; };
-		880651CD270671F1002F78BE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880651CB270671F1002F78BE /* HomeViewController.swift */; };
-		880651CE270671F1002F78BE /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880651CC270671F1002F78BE /* HomeViewController.xib */; };
 		882D3379270687DA00896495 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 882D3378270687DA00896495 /* GoogleService-Info.plist */; };
 		882D337F27068A8100896495 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882D337D27068A8100896495 /* SignInViewController.swift */; };
 		882D338027068A8100896495 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882D337E27068A8100896495 /* SignInViewController.xib */; };
 		882D338427068A9700896495 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882D338227068A9700896495 /* SignUpViewController.swift */; };
 		882D338527068A9700896495 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882D338327068A9700896495 /* SignUpViewController.xib */; };
+		88BBD4DF2708EAF000E085AD /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BBD4DE2708EAF000E085AD /* FirebaseAuthManager.swift */; };
 		F6D04EC42706A359008FCE88 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D04EC32706A359008FCE88 /* CustomTextField.swift */; };
 		F6D04EC72706A9E3008FCE88 /* CustomBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D04EC62706A9E3008FCE88 /* CustomBorderButton.swift */; };
 /* End PBXBuildFile section */
@@ -44,13 +43,12 @@
 		880651BC27067100002F78BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		880651BF27067100002F78BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		880651C127067100002F78BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		880651CB270671F1002F78BE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		880651CC270671F1002F78BE /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		882D3378270687DA00896495 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		882D337D27068A8100896495 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		882D337E27068A8100896495 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		882D338227068A9700896495 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		882D338327068A9700896495 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		88BBD4DE2708EAF000E085AD /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
 		E55F9E05A9C050E7831411ED /* Pods-Feed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feed.debug.xcconfig"; path = "Target Support Files/Pods-Feed/Pods-Feed.debug.xcconfig"; sourceTree = "<group>"; };
 		F6D04EC32706A359008FCE88 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		F6D04EC62706A9E3008FCE88 /* CustomBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBorderButton.swift; sourceTree = "<group>"; };
@@ -108,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				880651B3270670FF002F78BE /* AppDelegate.swift */,
+				88BBD4DE2708EAF000E085AD /* FirebaseAuthManager.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -126,27 +125,14 @@
 		880651C927067168002F78BE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				39CC04392708CD46006E6926 /* TabBarViewController.swift */,
+				88BBD4DC2708E3FC00E085AD /* Post */,
+				88BBD4DB2708E3F600E085AD /* Feed */,
+				88BBD4DA2708E3D700E085AD /* Profile */,
 				F6D04EC22706A31F008FCE88 /* CustomStyles  */,
 				882D337A2706890300896495 /* Login */,
-				880651CA270671DA002F78BE /* Home */,
 			);
 			path = Scenes;
-			sourceTree = "<group>";
-		};
-		880651CA270671DA002F78BE /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				880651CB270671F1002F78BE /* HomeViewController.swift */,
-				880651CC270671F1002F78BE /* HomeViewController.xib */,
-				39CC042D2708CC2F006E6926 /* FeedViewController.swift */,
-				39CC042E2708CC2F006E6926 /* FeedViewController.xib */,
-				39CC04312708CCC3006E6926 /* ProfileViewController.swift */,
-				39CC04322708CCC3006E6926 /* ProfileViewController.xib */,
-				39CC04352708CCDF006E6926 /* PostViewController.swift */,
-				39CC04362708CCDF006E6926 /* PostViewController.xib */,
-				39CC04392708CD46006E6926 /* TabBarViewController.swift */,
-			);
-			path = Home;
 			sourceTree = "<group>";
 		};
 		882D337A2706890300896495 /* Login */ = {
@@ -174,6 +160,33 @@
 				882D338327068A9700896495 /* SignUpViewController.xib */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		88BBD4DA2708E3D700E085AD /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				39CC04312708CCC3006E6926 /* ProfileViewController.swift */,
+				39CC04322708CCC3006E6926 /* ProfileViewController.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		88BBD4DB2708E3F600E085AD /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				39CC042D2708CC2F006E6926 /* FeedViewController.swift */,
+				39CC042E2708CC2F006E6926 /* FeedViewController.xib */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		88BBD4DC2708E3FC00E085AD /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				39CC04352708CCDF006E6926 /* PostViewController.swift */,
+				39CC04362708CCDF006E6926 /* PostViewController.xib */,
+			);
+			path = Post;
 			sourceTree = "<group>";
 		};
 		A7AB102BB4D5605B2834D729 /* Pods */ = {
@@ -261,7 +274,6 @@
 				882D3379270687DA00896495 /* GoogleService-Info.plist in Resources */,
 				880651BD27067100002F78BE /* Assets.xcassets in Resources */,
 				882D338527068A9700896495 /* SignUpViewController.xib in Resources */,
-				880651CE270671F1002F78BE /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,13 +328,13 @@
 			files = (
 				39CC04372708CCDF006E6926 /* PostViewController.swift in Sources */,
 				880651B4270670FF002F78BE /* AppDelegate.swift in Sources */,
-				880651CD270671F1002F78BE /* HomeViewController.swift in Sources */,
 				882D338427068A9700896495 /* SignUpViewController.swift in Sources */,
 				882D337F27068A8100896495 /* SignInViewController.swift in Sources */,
 				F6D04EC72706A9E3008FCE88 /* CustomBorderButton.swift in Sources */,
 				F6D04EC42706A359008FCE88 /* CustomTextField.swift in Sources */,
 				39CC04332708CCC3006E6926 /* ProfileViewController.swift in Sources */,
 				39CC043A2708CD46006E6926 /* TabBarViewController.swift in Sources */,
+				88BBD4DF2708EAF000E085AD /* FirebaseAuthManager.swift in Sources */,
 				39CC042F2708CC2F006E6926 /* FeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

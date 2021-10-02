@@ -6,14 +6,12 @@
 //
 
 import UIKit
-import FirebaseAuth
 import FirebaseFirestore
 
 class SignInViewController: UIViewController {
 
     
     // MARK: Properties
-    let db = Firestore.firestore()
     
     // MARK: Outlets
     @IBOutlet weak var textFieldEmail: CustomTextField!
@@ -47,23 +45,7 @@ class SignInViewController: UIViewController {
               let password = textFieldPassword.text
         else {return}
         
-        Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
-            if error != nil {
-                print("Erro: \(error?.localizedDescription)")
-            } else {
-                print("Usuario logado \(authResult?.user.uid)")
-                
-                guard let userId = authResult?.user.uid else {return}
-                
-                self.db.collection("users").document(userId).getDocument() { (document, err) in
-                    if let err = err {
-                        print("Error getting documents: \(err)")
-                    } else {
-                        print("Usuario: \(document?.data())")
-                    }
-                }
-            }
-        }
+        FirebaseAuthManager.signIn(email: email, password: password)
     }
     
     // MARK: Methods
