@@ -17,8 +17,28 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NúmeroDePostagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XnU-eW-FGD">
+                    <rect key="frame" x="126" y="406" width="162" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iE-bT-DoE">
+                    <rect key="frame" x="184" y="325" width="46.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="XnU-eW-FGD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="J29-to-ule"/>
+                <constraint firstItem="1iE-bT-DoE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="281" id="VGM-pb-Wde"/>
+                <constraint firstItem="1iE-bT-DoE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lRh-Qx-4wP"/>
+                <constraint firstItem="XnU-eW-FGD" firstAttribute="top" secondItem="1iE-bT-DoE" secondAttribute="bottom" constant="60" id="lUz-Ed-rtm"/>
+            </constraints>
             <point key="canvasLocation" x="30" y="104"/>
         </view>
     </objects>
