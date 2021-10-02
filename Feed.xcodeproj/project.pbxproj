@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39CC042F2708CC2F006E6926 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CC042D2708CC2F006E6926 /* FeedViewController.swift */; };
+		39CC04302708CC2F006E6926 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39CC042E2708CC2F006E6926 /* FeedViewController.xib */; };
+		39CC04332708CCC3006E6926 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CC04312708CCC3006E6926 /* ProfileViewController.swift */; };
+		39CC04342708CCC3006E6926 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39CC04322708CCC3006E6926 /* ProfileViewController.xib */; };
+		39CC04372708CCDF006E6926 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CC04352708CCDF006E6926 /* PostViewController.swift */; };
+		39CC04382708CCDF006E6926 /* PostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39CC04362708CCDF006E6926 /* PostViewController.xib */; };
+		39CC043A2708CD46006E6926 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CC04392708CD46006E6926 /* TabBarViewController.swift */; };
 		4A8CBF586A29BAF23D5A1880 /* Pods_Feed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81A8005993CFC62F690FD088 /* Pods_Feed.framework */; };
 		880651B4270670FF002F78BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880651B3270670FF002F78BE /* AppDelegate.swift */; };
 		880651BD27067100002F78BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 880651BC27067100002F78BE /* Assets.xcassets */; };
@@ -23,6 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39CC042D2708CC2F006E6926 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		39CC042E2708CC2F006E6926 /* FeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
+		39CC04312708CCC3006E6926 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		39CC04322708CCC3006E6926 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		39CC04352708CCDF006E6926 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		39CC04362708CCDF006E6926 /* PostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostViewController.xib; sourceTree = "<group>"; };
+		39CC04392708CD46006E6926 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		717D8B5F290E2722E5ADAD26 /* Pods-Feed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feed.release.xcconfig"; path = "Target Support Files/Pods-Feed/Pods-Feed.release.xcconfig"; sourceTree = "<group>"; };
 		81A8005993CFC62F690FD088 /* Pods_Feed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Feed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		880651B0270670FF002F78BE /* Feed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feed.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +138,13 @@
 			children = (
 				880651CB270671F1002F78BE /* HomeViewController.swift */,
 				880651CC270671F1002F78BE /* HomeViewController.xib */,
+				39CC042D2708CC2F006E6926 /* FeedViewController.swift */,
+				39CC042E2708CC2F006E6926 /* FeedViewController.xib */,
+				39CC04312708CCC3006E6926 /* ProfileViewController.swift */,
+				39CC04322708CCC3006E6926 /* ProfileViewController.xib */,
+				39CC04352708CCDF006E6926 /* PostViewController.swift */,
+				39CC04362708CCDF006E6926 /* PostViewController.xib */,
+				39CC04392708CD46006E6926 /* TabBarViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -234,6 +255,9 @@
 			files = (
 				882D338027068A8100896495 /* SignInViewController.xib in Resources */,
 				880651C027067100002F78BE /* LaunchScreen.storyboard in Resources */,
+				39CC04382708CCDF006E6926 /* PostViewController.xib in Resources */,
+				39CC04342708CCC3006E6926 /* ProfileViewController.xib in Resources */,
+				39CC04302708CC2F006E6926 /* FeedViewController.xib in Resources */,
 				882D3379270687DA00896495 /* GoogleService-Info.plist in Resources */,
 				880651BD27067100002F78BE /* Assets.xcassets in Resources */,
 				882D338527068A9700896495 /* SignUpViewController.xib in Resources */,
@@ -290,12 +314,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39CC04372708CCDF006E6926 /* PostViewController.swift in Sources */,
 				880651B4270670FF002F78BE /* AppDelegate.swift in Sources */,
 				880651CD270671F1002F78BE /* HomeViewController.swift in Sources */,
 				882D338427068A9700896495 /* SignUpViewController.swift in Sources */,
 				882D337F27068A8100896495 /* SignInViewController.swift in Sources */,
 				F6D04EC72706A9E3008FCE88 /* CustomBorderButton.swift in Sources */,
 				F6D04EC42706A359008FCE88 /* CustomTextField.swift in Sources */,
+				39CC04332708CCC3006E6926 /* ProfileViewController.swift in Sources */,
+				39CC043A2708CD46006E6926 /* TabBarViewController.swift in Sources */,
+				39CC042F2708CC2F006E6926 /* FeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
