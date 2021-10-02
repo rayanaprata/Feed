@@ -23,6 +23,7 @@
 		882D338027068A8100896495 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882D337E27068A8100896495 /* SignInViewController.xib */; };
 		882D338427068A9700896495 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882D338227068A9700896495 /* SignUpViewController.swift */; };
 		882D338527068A9700896495 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882D338327068A9700896495 /* SignUpViewController.xib */; };
+		888797832709180A00083CF5 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888797822709180A00083CF5 /* UserSession.swift */; };
 		88BBD4DF2708EAF000E085AD /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BBD4DE2708EAF000E085AD /* FirebaseAuthManager.swift */; };
 		F6D04EC42706A359008FCE88 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D04EC32706A359008FCE88 /* CustomTextField.swift */; };
 		F6D04EC72706A9E3008FCE88 /* CustomBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D04EC62706A9E3008FCE88 /* CustomBorderButton.swift */; };
@@ -48,6 +49,7 @@
 		882D337E27068A8100896495 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		882D338227068A9700896495 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		882D338327068A9700896495 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		888797822709180A00083CF5 /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
 		88BBD4DE2708EAF000E085AD /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
 		E55F9E05A9C050E7831411ED /* Pods-Feed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feed.debug.xcconfig"; path = "Target Support Files/Pods-Feed/Pods-Feed.debug.xcconfig"; sourceTree = "<group>"; };
 		F6D04EC32706A359008FCE88 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			children = (
 				880651B3270670FF002F78BE /* AppDelegate.swift */,
 				88BBD4DE2708EAF000E085AD /* FirebaseAuthManager.swift */,
+				888797822709180A00083CF5 /* UserSession.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				882D337F27068A8100896495 /* SignInViewController.swift in Sources */,
 				F6D04EC72706A9E3008FCE88 /* CustomBorderButton.swift in Sources */,
 				F6D04EC42706A359008FCE88 /* CustomTextField.swift in Sources */,
+				888797832709180A00083CF5 /* UserSession.swift in Sources */,
 				39CC04332708CCC3006E6926 /* ProfileViewController.swift in Sources */,
 				39CC043A2708CD46006E6926 /* TabBarViewController.swift in Sources */,
 				88BBD4DF2708EAF000E085AD /* FirebaseAuthManager.swift in Sources */,

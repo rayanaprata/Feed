@@ -28,7 +28,9 @@ class FirebaseAuthManager {
                     if let err = err {
                         completion(err)
                     } else {
-                        print("Usuario: \(document?.data())")
+                        let dict = document?.data()
+                        UserSession.shared.name = dict?["name"] as? String
+                        UserSession.shared.email = dict?["email"] as? String
                         completion(nil)
                     }
                 }
