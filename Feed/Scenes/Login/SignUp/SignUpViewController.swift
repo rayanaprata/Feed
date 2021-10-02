@@ -36,28 +36,41 @@ class SignUpViewController: UIViewController {
     // MARK: Actions
     @IBAction func handlerButtonRegister(_ sender: Any) {
         
-        guard let email = textFieldEmail.text, let password = textFieldPassword.text, let name = textFieldName.text, let confirmPassword = textFieldConfirmPassword.text else { return }
+        guard let email = textFieldEmail.text,
+                let password = textFieldPassword.text,
+                let name = textFieldName.text,
+                let confirmPassword = textFieldConfirmPassword.text
+        else { return }
+        
+        if validateFields(name: name, email: email, password: password, confirmPassword: confirmPassword) {
+            FirebaseAuthManager.createAccount(name: name, email: email, password: password)
+        }
+                
+    }
+    
+    // MARK: Methods
+    private func validateFields(name: String, email: String, password: String, confirmPassword: String) -> Bool {
+        
+        var isOk = true
         
         if name.count < 2 {
             print("digite um nome válido")
-            return
+            isOk = false
         }
         
         if !email.contains("@") {
             print("email incorreto")
-            return
+            isOk = false
         }
         
         if password != confirmPassword {
             print("a senha n é igual")
-            return
+            isOk = false
         }
         
-        FirebaseAuthManager.createAccount(name: name, email: email, password: password)
-        
+        return isOk
     }
     
-    // MARK: Methods
     private func setupUI() {
         title = "Cadastrar"
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleClick))
