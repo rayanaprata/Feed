@@ -36,13 +36,11 @@ class FirebaseAuthManager {
         }
     }
     
-    static func createAccount(name: String, email: String, password: String) {
+    static func createAccount(name: String, email: String, password: String, completion: @escaping (Error?) -> Void) {
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
             if error != nil {
-                print("ERRO -> \(error?.localizedDescription)")
-            } else {
-                print("Usuário cadastrado!")
-                
+                completion(error)
+            } else {                
                 guard let userId = authResult?.user.uid else {return}
                 
                 let db = Firestore.firestore()
@@ -51,9 +49,9 @@ class FirebaseAuthManager {
                     "email": email
                 ]) { err in
                     if let err = err {
-                        print("Error adding document: \(err)")
+                        completion(err)
                     } else {
-                        print("Document added")
+                        completion(nil)
                     }
                 }
             }
