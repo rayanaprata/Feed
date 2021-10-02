@@ -26,7 +26,7 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="Bdh-60-0za">
                     <rect key="frame" x="20" y="321.5" width="374" height="263"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JHl-Su-ouk" customClass="CustomTextField" customModule="Feed" customModuleProvider="target">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JHl-Su-ouk" customClass="CustomTextField" customModule="Feed" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="9Ry-0S-JGM"/>
@@ -39,7 +39,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kA9-EA-Jax" customClass="CustomTextField" customModule="Feed" customModuleProvider="target">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kA9-EA-Jax" customClass="CustomTextField" customModule="Feed" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="71" width="374" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="efr-Ip-a97"/>
@@ -52,7 +52,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Smg-yO-LRZ" customClass="CustomTextField" customModule="Feed" customModuleProvider="target">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Smg-yO-LRZ" customClass="CustomTextField" customModule="Feed" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="142" width="374" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="r08-HU-C3e"/>
@@ -65,7 +65,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmar senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IaB-4d-cO2" customClass="CustomTextField" customModule="Feed" customModuleProvider="target">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirmar senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IaB-4d-cO2" customClass="CustomTextField" customModule="Feed" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="213" width="374" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="8kW-SW-NRv"/>

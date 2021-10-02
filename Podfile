@@ -6,8 +6,7 @@ target 'Feed' do
   use_frameworks!
 
   # Pods for Feed
-  pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
-  pod 'FirebaseFirestoreSwift'
+  pod 'FirebaseFirestore'
 
 end

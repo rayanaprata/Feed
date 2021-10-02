@@ -40,7 +40,8 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func handlerButtonEntry(_ sender: Any) {
-//        Auth.auth().signIn
+        
+        //Auth.auth().signIn(withEmail: String, password: <#T##String#>, completion: <#T##((AuthDataResult?, Error?) -> Void)?##((AuthDataResult?, Error?) -> Void)?##(AuthDataResult?, Error?) -> Void#>)
     }
     
     // MARK: Methods
