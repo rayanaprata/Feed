@@ -58,4 +58,8 @@ class FirebaseAuthManager {
         }
     }
     
+    static func logout() {
+        try? Auth.auth().signOut()
+    }
+    
 }

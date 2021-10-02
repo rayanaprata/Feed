@@ -32,16 +32,31 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEN-pF-A4J">
+                    <rect key="frame" x="157" y="487" width="100" height="33"/>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.79607843140000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="nDT-sv-FyK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Sair"/>
+                    <connections>
+                        <action selector="handlerButtonLogout:" destination="-1" eventType="touchUpInside" id="3QC-nP-dgC"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="XnU-eW-FGD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="J29-to-ule"/>
                 <constraint firstItem="1iE-bT-DoE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="281" id="VGM-pb-Wde"/>
+                <constraint firstItem="jEN-pF-A4J" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WYh-iU-u9b"/>
                 <constraint firstItem="1iE-bT-DoE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lRh-Qx-4wP"/>
                 <constraint firstItem="XnU-eW-FGD" firstAttribute="top" secondItem="1iE-bT-DoE" secondAttribute="bottom" constant="60" id="lUz-Ed-rtm"/>
+                <constraint firstItem="jEN-pF-A4J" firstAttribute="top" secondItem="XnU-eW-FGD" secondAttribute="bottom" constant="60" id="rgh-xd-qqI"/>
             </constraints>
-            <point key="canvasLocation" x="30" y="104"/>
+            <point key="canvasLocation" x="28.985507246376812" y="103.79464285714285"/>
         </view>
     </objects>
 </document>

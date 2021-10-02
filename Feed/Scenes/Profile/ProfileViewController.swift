@@ -32,6 +32,13 @@ class ProfileViewController: UIViewController {
     }
     
     // MARK: Actions
+    @IBAction func handlerButtonLogout(_ sender: Any) {
+        FirebaseAuthManager.logout()
+        let viewController = SignInViewController()
+        let navBar = UINavigationController(rootViewController: viewController)
+        UIApplication.shared.windows.first?.rootViewController = navBar
+    }
+    
     
     // MARK: Methods
     private func setupUI() {
