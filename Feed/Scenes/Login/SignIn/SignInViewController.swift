@@ -44,7 +44,15 @@ class SignInViewController: UIViewController {
               let password = textFieldPassword.text
         else {return}
         
-        FirebaseAuthManager.signIn(email: email, password: password)
+        FirebaseAuthManager.signIn(email: email, password: password) { error in
+            if error != nil {
+                print("Error: \(error?.localizedDescription)")
+            }
+            else {
+                // TODO: Navegar para o Feed
+                print("navegar pro feed")
+            }
+        }
     }
     
     // MARK: Methods
