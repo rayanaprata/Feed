@@ -49,7 +49,8 @@ class SignUpViewController: UIViewController {
                 }
                 else {
                     // TODO: Navegar para o Feed
-                    print("navegar pro feed")
+                    let viewController = TabBarViewController()
+                    UIApplication.shared.windows.first?.rootViewController = viewController
                 }
             }
         }
