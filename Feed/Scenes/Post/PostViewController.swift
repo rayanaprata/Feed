@@ -50,6 +50,8 @@ class PostViewController: UIViewController {
         
         let publish = UIBarButtonItem(title: "Publicar", style: .done, target: self, action: #selector(publishAction))
         let space = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        toolBar.barTintColor = UIColor(red: 0.98, green: 0.79, blue: 0.01, alpha: 1.00)
+        publish.tintColor = UIColor.black
         toolBar.setItems([space,publish,space], animated: true)
         textViewPost.inputAccessoryView = toolBar
     }
