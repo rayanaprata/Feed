@@ -35,7 +35,29 @@ class PostViewController: UIViewController {
     
     // MARK: Methods
     private func setupUI() {
+        textViewPost.delegate = self
+        textViewPost.text = "Adicione o texto da sua postagem"
+        textViewPost.textColor = UIColor.lightGray
+        textViewDidBeginEditing(textViewPost)
+        textViewDidEndEditing(textViewPost)
         labelName.text = UserSession.shared.name
     }
 
+}
+
+extension PostViewController: UITextViewDelegate {
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.textColor == UIColor.lightGray {
+            textView.text = nil
+            textView.textColor = UIColor.black
+        }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            textView.text = "Adicione o texto da sua postagem"
+            textView.textColor = UIColor.lightGray
+        }
+    }
 }
