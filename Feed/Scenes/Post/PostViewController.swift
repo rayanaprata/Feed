@@ -12,6 +12,8 @@ class PostViewController: UIViewController {
     // MARK: Properties
     
     // MARK: Outlets
+    @IBOutlet var labelName: UILabel!
+    @IBOutlet var textViewPost: UITextView!
     
     // MARK: Initialization
     init() {
@@ -33,7 +35,7 @@ class PostViewController: UIViewController {
     
     // MARK: Methods
     private func setupUI() {
-        
+        labelName.text = UserSession.shared.name
     }
 
 }

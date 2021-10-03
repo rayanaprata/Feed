@@ -42,7 +42,7 @@ class ProfileViewController: UIViewController {
     
     // MARK: Methods
     private func setupUI() {
-        
+        labelName.text = UserSession.shared.name
     }
 
 }
