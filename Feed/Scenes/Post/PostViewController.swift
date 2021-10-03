@@ -29,6 +29,7 @@ class PostViewController: UIViewController {
         super.viewDidLoad()
         
         setupUI()
+        toolBarUI()
     }
     
     // MARK: Actions
@@ -41,6 +42,20 @@ class PostViewController: UIViewController {
         textViewDidBeginEditing(textViewPost)
         textViewDidEndEditing(textViewPost)
         labelName.text = UserSession.shared.name
+    }
+    
+    private func toolBarUI() {
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        
+        let publish = UIBarButtonItem(title: "Publicar", style: .done, target: self, action: #selector(publishAction))
+        let space = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        toolBar.setItems([space,publish,space], animated: true)
+        textViewPost.inputAccessoryView = toolBar
+    }
+    
+    @objc func publishAction() {
+        print("passar o dado pro feed")
     }
 
 }
