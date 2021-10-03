@@ -57,7 +57,7 @@ class PostViewController: UIViewController {
     }
     
     @objc func publishAction() {
-        print("passar o dado pro feed")
+        print("Mensagem do Feed: \(textViewPost.text ?? "")")
     }
 
 }

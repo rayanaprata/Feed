@@ -60,23 +60,45 @@ class SignUpViewController: UIViewController {
     private func validateFields(name: String, email: String, password: String, confirmPassword: String) -> Bool {
         
         var isOk = true
+        var title = ""
         
-        if name.count < 2 {
-            print("digite um nome válido")
+        if password.count < 6 {
+            print("senha curta")
+            title = "Senha muito curta"
             isOk = false
         }
         
         if !email.contains("@") {
             print("email incorreto")
+            title = "Insira um e-mail válido"
             isOk = false
         }
         
-        if password != confirmPassword {
-            print("a senha n é igual")
+        if name.count < 2 {
+            print("digite um nome válido")
+            title = "Insira um nome válido"
             isOk = false
+        }
+        
+        if password.count >= 6 {
+            if password != confirmPassword {
+                print("a senha n é igual")
+                title = "Senhas diferentes"
+                isOk = false
+            }
+        }
+        
+        if !isOk {
+            handleAlert(title)
         }
         
         return isOk
+    }
+    
+    func handleAlert(_ title: String) {
+        let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel))
+        present(alert, animated: true)
     }
     
     private func setupUI() {
