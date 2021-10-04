@@ -57,6 +57,7 @@ class PostViewController: UIViewController {
     }
     
     @objc func publishAction() {
+        textViewPost.resignFirstResponder()
         print("Mensagem do Feed: \(textViewPost.text ?? "")")
     }
 
