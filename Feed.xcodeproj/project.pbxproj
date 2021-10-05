@@ -23,6 +23,9 @@
 		882D338027068A8100896495 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882D337E27068A8100896495 /* SignInViewController.xib */; };
 		882D338427068A9700896495 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882D338227068A9700896495 /* SignUpViewController.swift */; };
 		882D338527068A9700896495 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882D338327068A9700896495 /* SignUpViewController.xib */; };
+		888588CA270BD18700E97022 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888588C8270BD18700E97022 /* PostTableViewCell.swift */; };
+		888588CB270BD18700E97022 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 888588C9270BD18700E97022 /* PostTableViewCell.xib */; };
+		888588D0270BDEF400E97022 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888588CF270BDEF400E97022 /* PostModel.swift */; };
 		888797832709180A00083CF5 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888797822709180A00083CF5 /* UserSession.swift */; };
 		88BBD4DF2708EAF000E085AD /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BBD4DE2708EAF000E085AD /* FirebaseAuthManager.swift */; };
 		F6D04EC42706A359008FCE88 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D04EC32706A359008FCE88 /* CustomTextField.swift */; };
@@ -49,6 +52,9 @@
 		882D337E27068A8100896495 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		882D338227068A9700896495 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		882D338327068A9700896495 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		888588C8270BD18700E97022 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		888588C9270BD18700E97022 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		888588CF270BDEF400E97022 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		888797822709180A00083CF5 /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
 		88BBD4DE2708EAF000E085AD /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
 		E55F9E05A9C050E7831411ED /* Pods-Feed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feed.debug.xcconfig"; path = "Target Support Files/Pods-Feed/Pods-Feed.debug.xcconfig"; sourceTree = "<group>"; };
@@ -165,6 +171,23 @@
 			path = SignUp;
 			sourceTree = "<group>";
 		};
+		888588C7270BD11500E97022 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				888588C8270BD18700E97022 /* PostTableViewCell.swift */,
+				888588C9270BD18700E97022 /* PostTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		888588CD270BDED000E97022 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				888588CF270BDEF400E97022 /* PostModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		88BBD4DA2708E3D700E085AD /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +200,8 @@
 		88BBD4DB2708E3F600E085AD /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				888588CD270BDED000E97022 /* Model */,
+				888588C7270BD11500E97022 /* Cells */,
 				39CC042D2708CC2F006E6926 /* FeedViewController.swift */,
 				39CC042E2708CC2F006E6926 /* FeedViewController.xib */,
 			);
@@ -272,6 +297,7 @@
 				882D338027068A8100896495 /* SignInViewController.xib in Resources */,
 				880651C027067100002F78BE /* LaunchScreen.storyboard in Resources */,
 				39CC04382708CCDF006E6926 /* PostViewController.xib in Resources */,
+				888588CB270BD18700E97022 /* PostTableViewCell.xib in Resources */,
 				39CC04342708CCC3006E6926 /* ProfileViewController.xib in Resources */,
 				39CC04302708CC2F006E6926 /* FeedViewController.xib in Resources */,
 				882D3379270687DA00896495 /* GoogleService-Info.plist in Resources */,
@@ -334,12 +360,14 @@
 				882D338427068A9700896495 /* SignUpViewController.swift in Sources */,
 				882D337F27068A8100896495 /* SignInViewController.swift in Sources */,
 				F6D04EC72706A9E3008FCE88 /* CustomBorderButton.swift in Sources */,
+				888588D0270BDEF400E97022 /* PostModel.swift in Sources */,
 				F6D04EC42706A359008FCE88 /* CustomTextField.swift in Sources */,
 				888797832709180A00083CF5 /* UserSession.swift in Sources */,
 				39CC04332708CCC3006E6926 /* ProfileViewController.swift in Sources */,
 				39CC043A2708CD46006E6926 /* TabBarViewController.swift in Sources */,
 				88BBD4DF2708EAF000E085AD /* FirebaseAuthManager.swift in Sources */,
 				39CC042F2708CC2F006E6926 /* FeedViewController.swift in Sources */,
+				888588CA270BD18700E97022 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

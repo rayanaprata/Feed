@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 class PostViewController: UIViewController {
 
     // MARK: Properties
+    static var posts: [String] = ["hello"]
     
     // MARK: Outlets
     @IBOutlet var labelName: UILabel!
@@ -57,7 +59,23 @@ class PostViewController: UIViewController {
     
     @objc func publishAction() {
         textViewPost.resignFirstResponder()
-        print("Mensagem do Feed: \(textViewPost.text ?? "")")
+        //print("Mensagem do Feed: \(textViewPost.text ?? "")")
+//        PostViewController.posts.append(textViewPost.text)
+//        print(PostViewController.posts)
+        
+        let message = textViewPost.text
+        let db = Firestore.firestore()
+        
+        db.collection("posts").addDocument(data: [
+            "message": message,
+            "name": UserSession.shared.name
+        ]) { error in
+            if error != nil {
+                print("deu erro")
+            } else {
+                self.textViewPost.text = ""
+            }
+        }
     }
 
 }
