@@ -45,7 +45,7 @@ class SignUpViewController: UIViewController {
         if validateFields(name: name, email: email, password: password, confirmPassword: confirmPassword) {
             FirebaseAuthManager.createAccount(name: name, email: email, password: password) { error in
                 if error != nil {
-                    print("Error: \(error?.localizedDescription)")
+                    //print("Error: \(error?.localizedDescription)")
                 }
                 else {
                     // TODO: Navegar para o Feed
@@ -60,43 +60,39 @@ class SignUpViewController: UIViewController {
     private func validateFields(name: String, email: String, password: String, confirmPassword: String) -> Bool {
         
         var isOk = true
-        var title = ""
+        var message = ""
         
         if password.count < 6 {
-            print("senha curta")
-            title = "Senha muito curta"
+            message = "Senha muito curta"
             isOk = false
         }
         
         if !email.contains("@") {
-            print("email incorreto")
-            title = "Insira um e-mail válido"
+            message = "Insira um e-mail válido"
             isOk = false
         }
         
         if name.count < 2 {
-            print("digite um nome válido")
-            title = "Insira um nome válido"
+            message = "Insira um nome válido"
             isOk = false
         }
         
         if password.count >= 6 {
             if password != confirmPassword {
-                print("a senha n é igual")
-                title = "Senhas diferentes"
+                message = "Senhas diferentes"
                 isOk = false
             }
         }
         
         if !isOk {
-            handleAlert(title)
+            handleAlert(message)
         }
         
         return isOk
     }
     
-    func handleAlert(_ title: String) {
-        let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+    func handleAlert(_ message: String) {
+        let alert = UIAlertController(title: "Erro", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .cancel))
         present(alert, animated: true)
     }

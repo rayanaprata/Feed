@@ -11,7 +11,13 @@ class UserSession {
     
     static let shared = UserSession()
     
-    var name: String?
+    var name: String? {
+        get {
+            UserDefaults.standard.string(forKey: "keyName")
+        } set {
+            UserDefaults.standard.setValue(newValue, forKey: "keyName")
+        }
+    }
     var email: String?
     
     func logout() {

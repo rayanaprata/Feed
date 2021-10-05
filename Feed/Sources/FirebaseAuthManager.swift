@@ -24,6 +24,7 @@ class FirebaseAuthManager {
                 guard let userId = authResult?.user.uid else {return}
                 
                 let db = Firestore.firestore()
+                db.settings.isPersistenceEnabled = true
                 db.collection("users").document(userId).getDocument() { (document, err) in
                     if let err = err {
                         completion(err)
@@ -46,6 +47,7 @@ class FirebaseAuthManager {
                 guard let userId = authResult?.user.uid else {return}
                 
                 let db = Firestore.firestore()
+                db.settings.isPersistenceEnabled = true
                 db.collection("users").document(userId).setData([
                     "name": name,
                     "email": email
@@ -56,6 +58,9 @@ class FirebaseAuthManager {
                         completion(nil)
                     }
                 }
+             
+                UserSession.shared.name = name
+                UserSession.shared.email = email
             }
         }
     }

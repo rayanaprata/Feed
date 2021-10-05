@@ -47,6 +47,7 @@ class SignInViewController: UIViewController {
         FirebaseAuthManager.signIn(email: email, password: password) { error in
             if error != nil {
                 print("Error: \(error?.localizedDescription)")
+                self.alert()
             }
             else {
                 // TODO: Navegar para o Feed
@@ -71,6 +72,12 @@ class SignInViewController: UIViewController {
     @objc func handleClick() {
         textFieldEmail.resignFirstResponder()
         textFieldPassword.resignFirstResponder()
+    }
+    
+    func alert() {
+        let alert = UIAlertController(title: "Erro", message: "Preencha os dados corretamente", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Tentar novamente", style: .cancel))
+        present(alert, animated: true)
     }
     
 
