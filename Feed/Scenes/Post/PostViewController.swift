@@ -11,7 +11,8 @@ import FirebaseFirestore
 class PostViewController: UIViewController {
 
     // MARK: Properties
-    static var posts: [String] = ["hello"]
+    var send = false
+    let toolBar = UIToolbar()
     
     // MARK: Outlets
     @IBOutlet var labelName: UILabel!
@@ -47,11 +48,10 @@ class PostViewController: UIViewController {
     }
     
     private func toolBarUI() {
-        let toolBar = UIToolbar()
         toolBar.sizeToFit()
         let publish = UIBarButtonItem(title: "Publicar", style: .done, target: self, action: #selector(publishAction))
         let space = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        toolBar.barTintColor = UIColor(red: 0.98, green: 0.79, blue: 0.01, alpha: 1.00)
+        toolBar.barTintColor = UIColor(red: 0.83, green: 0.83, blue: 0.83, alpha: 1.00)
         publish.tintColor = UIColor.black
         toolBar.setItems([space,publish,space], animated: true)
         textViewPost.inputAccessoryView = toolBar
@@ -59,22 +59,25 @@ class PostViewController: UIViewController {
     
     @objc func publishAction() {
         textViewPost.resignFirstResponder()
-        //print("Mensagem do Feed: \(textViewPost.text ?? "")")
-//        PostViewController.posts.append(textViewPost.text)
-//        print(PostViewController.posts)
-        
-        let message = textViewPost.text
-        let db = Firestore.firestore()
-        
-        db.collection("posts").addDocument(data: [
-            "message": message,
-            "name": UserSession.shared.name
-        ]) { error in
-            if error != nil {
-                print("deu erro")
-            } else {
-                self.textViewPost.text = ""
+
+        if send {
+            let message = textViewPost.text
+            let db = Firestore.firestore()
+            
+            db.collection("posts").addDocument(data: [
+                "message": message,
+                "name": UserSession.shared.name
+            ]) { error in
+                if error != nil {
+                    print("deu erro")
+                } else {
+                    self.textViewPost.text = ""
+                    self.toolBar.barTintColor = UIColor(red: 0.83, green: 0.83, blue: 0.83, alpha: 1.00)
+                    self.send = false
+                    
+                }
             }
+            print("mandou, em!")
         }
     }
 
@@ -93,6 +96,17 @@ extension PostViewController: UITextViewDelegate {
         if textView.text.isEmpty {
             textView.text = "Adicione o texto da sua postagem"
             textView.textColor = UIColor.lightGray
+        }
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        
+        if textView.text.count >= 1 {
+            toolBar.barTintColor = UIColor(red: 0.98, green: 0.79, blue: 0.01, alpha: 1.00)
+            send = true
+        } else {
+            toolBar.barTintColor = UIColor(red: 0.83, green: 0.83, blue: 0.83, alpha: 1.00)
+            send = false
         }
     }
 }
